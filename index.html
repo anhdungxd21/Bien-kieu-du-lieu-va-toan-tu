@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+    <style>
+        table{
+            ;
+        }
+        td{
+            width: 100px;
+            height: 60px;
+        }
+    </style>
+    <!--Chương trình tính điểm-->
+    <h2>Tính điểm trung bình môn Lý, Toán, Sinh</h2>
+    <table border="1px solid black">
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td>
+                <lable>Điểm vật lý :</lable>
+                <input type="text" id="physical" placeholder="0">
+            </td>
+            <td>
+                <lable >Điểm toán :</lable>
+                <input type="number"  id="match" placeholder="0">
+            </td>
+            <td>
+                <lable>Điểm sinh :</lable>
+                <input type="number" id="biological" placeholder="0">
+            </td>
+            <td>
+                <p id ="avr">Điểm trung bình</p>
+            </td>
+            <td>
+                <p id="sum">Điểm tổng kết</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <button onclick="doMatch()">Tính toán</button>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <!--chương trình đổi nhiệt độ-->
+    <h2>Đổi nhiệt độ</h2>
+    <table>
+        <td align="center">
+            <label for="c-degrees">Nhập độ C</label><br>
+            <input type="number" name="c-degrees" id="c-degrees" value=""><br>
+            <button onclick="cChange()">Đổi C sang F</button>
+        </td>
+        <td>
+            <label for="f-degrees">Nhập độ F</label><br>
+            <input type="number" name="f-degrees" id="f-degrees" value=""><br>
+            <button onclick="fChange()">Đổi C sang F</button>
+            <button onclick="resetInput()">Reset</button>
+        </td>
+    </table>
+    <hr>
+    <!---->
+    <h2>Tính diện tích hình tròn</h2>
+    <label for="radius">Nhập vào bán kính</label><br>
+    <input type="number" name="radius" id="radius">
+    <p id="area"></p><br>
+    <button onclick="circleArea()">Diện tích</button>
+    <button onclick="circleCircuit()">Chu vi</button>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
